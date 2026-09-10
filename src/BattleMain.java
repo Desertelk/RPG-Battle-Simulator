@@ -17,6 +17,23 @@ public class BattleMain {
             player.resetHealth();
         }
         
+        /* for(int i = 0; i < enemies.size(); i++){
+            Character enemy = enemies.get(i);
+
+            printBattleIntro(i);
+
+            BattleEngine battle = new BattleEngine(player, enemy);
+            battle.startBattle();
+
+            if(!player.isAlive()){
+                System.out.println("You have been defeated!");
+                break;
+            }
+
+            player.resetHealth();
+        }
+             */
+        
     }
 
     public static void printIntro(){
@@ -72,5 +89,20 @@ public class BattleMain {
         enemyList.add(new Enemy("Gorblak", 100, 10));
 
         return enemyList;
+    }
+
+    public static void printBattleIntro(int battleNumber){
+        switch (battleNumber){
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+        }
     }
 }
