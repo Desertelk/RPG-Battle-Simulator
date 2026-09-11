@@ -18,6 +18,7 @@ public class BattleEngine {
 
         while (player.isAlive() && enemy.isAlive()){
             playerTurn(player);
+            System.out.println();
 
             if(!enemy.isAlive()){
                 System.out.printf("You have defeated %s\n", enemy.getName());
@@ -25,6 +26,7 @@ public class BattleEngine {
             }
             
             enemyTurn(enemy);
+            System.out.println();
             
             if(!player.isAlive()){
                 System.out.println("You have been defeated!");

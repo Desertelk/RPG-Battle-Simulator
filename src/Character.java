@@ -26,7 +26,7 @@ public abstract class Character {
             hp = 0;
         }
 
-        System.out.printf("%s took %d. Current HP: %d\n\n", name, amount, hp);
+        System.out.printf("%s took %d. Current HP: %d\n", name, amount, hp);
     }
 
     public void dealDamage(Character target){
